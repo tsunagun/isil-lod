@@ -1,1 +1,39 @@
 
+<!DOCTYPE html>
+<html lang="ja" >
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>図書館及び関連組織のための国際標準識別子（ISIL）SPARQL エンドポイント</title> <!-- タイトル記述 -->
+    <meta name="author" content="Tsunagu HONMA" />
+    <link href="https://cdn.jsdelivr.net/npm/yasgui@2.7.27/dist/yasgui.min.css" rel='stylesheet' type='text/css'/>
+        <!-- cssファイルの読み込み -->
+  </head>
+  <body>
+    <div id="wrapper"> <!-- このタグ以下に文書を書く -->
+      <header id="header">
+      <h1>ISIL SPARQL エンドポイント</h1>
+      </header>
+      <section id="sparql">
+          <div id='yasgui'>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/yasgui@2.7.27/dist/yasgui.min.js"></script>
+              <script type="text/javascript">
+              var isil = 'http://mdlab.slis.tsukuba.ac.jp/isil/query';
+              var yasgui = YASGUI(document.getElementById("yasgui"), {
+              endpoint: isil,
+              yasqe: {
+              sparql: {endpoint: isil}
+              }
+              });
+              </script>
+              </div>
+              </section>
+  
+      <footer id="footer"> <!-- フッター -->
+      <small><a href="https://github.io/tsunagun/isil-lod">isil-lod</a></small>
+      </footer>
+
+    </div> <!-- /wrapper -->
+  </body>
+</html>
+
